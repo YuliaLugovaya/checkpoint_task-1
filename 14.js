@@ -4,8 +4,7 @@
 function getRandom(num, min, max) {
     let arr = [];
     for (let i = 0; i < num; i++) {
-        let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-        arr.push(randomNumber);
+        arr.push(Math.floor(Math.random() * (max - min + 1)) + min);
     }
     let sortNumbers = arr.sort(function (a, b) {
         return a - b;

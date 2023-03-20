@@ -8,5 +8,7 @@ function getMinNumber(arr) {
     })
     return arraySort[0];
 
+    // второй способ
+    // return Math.min(...arr);
 }
 console.log(getMinNumber([5, 65, 3, 150, 75]));

@@ -7,5 +7,16 @@ function changeRegister(str) {
         return el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase();
     });
     return newArr.join('');
+
+    // второй способ
+    // let strResult = '';
+    // for(let i = 0; i < str.length; i++) {
+    //   if(str[i] === str[i].toUpperCase()) {
+    //     strResult += str[i].toLowerCase();
+    //   } else {
+    //     strResult += str[i].toUpperCase();
+    //   }
+    // }
+    // return strResult;
 }
 console.log(changeRegister('КаЖдЫй оХоТнИк'));
